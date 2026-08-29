@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficina Eu, Passarinho</title>
+  <meta name="description" content="Mesmo sem máquina de costura e prática em trabalhos manuais, você aprende do zero a fazer 6 modelos de passarinhos feitos à mão.">
+  <style>
+    :root {
+      --bg: #f8f3ee;
+      --panel: #ffffff;
+      --text: #1f1f1f;
+      --muted: #4b4b4b;
+      --accent: #cf7a35;
+      --accent-dark: #9a4f1e;
+      --soft: #f2e7dc;
+      --line: rgba(0,0,0,0.08);
+      --shadow: 0 10px 30px rgba(34, 20, 10, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 80px;
+    }
+
+    .section,
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 28px 24px;
+      margin-top: 24px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: var(--accent-dark);
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p, ul {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    p, li {
+      font-size: 1.03rem;
+      color: var(--muted);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 18px 26px;
+      border-radius: 999px;
+      transition: transform 0.2s ease, background 0.2s ease;
+      box-shadow: 0 12px 24px rgba(207, 122, 53, 0.25);
+    }
+
+    .cta:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .mini-list,
+    .check-list,
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+    }
+
+    .mini-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+      margin-top: 24px;
+    }
+
+    .mini-list li,
+    .check-list li,
+    .bullet-list li {
+      position: relative;
+      padding-left: 28px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .mini-list li::before,
+    .check-list li::before,
+    .bullet-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .quote {
+      text-align: center;
+      padding: 34px 24px;
+    }
+
+    .quote strong {
+      color: var(--text);
+    }
+
+    .final-cta {
+      text-align: center;
+      margin-top: 30px;
+      padding-bottom: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .hero,
+      .split,
+      .mini-list {
+        grid-template-columns: 1fr;
+      }
+
+      .section,
+      .hero {
+        padding: 22px 18px;
+      }
+
+      .cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Oficina online</p>
+        <h1>Mesmo sem máquina de costura e prática em trabalhos manuais, você aprende do zero a fazer 6 modelos de passarinhos feitos à mão.</h1>
+        <p>Você vai criar peças delicadas, cheias de significado e beleza, com materiais simples e acessíveis.</p>
+        <a class="cta" href="https://pay.hotmart.com/G89532997I?checkoutMode=10&hotfeature=51">QUERO GARANTIR MINHA VAGA</a>
+        <ul class="mini-list">
+          <li>Acesso imediato</li>
+          <li>Assista no seu ritmo</li>
+          <li>Não precisa experiência</li>
+          <li>Acesso vitalício</li>
+        </ul>
+      </div>
+      <img src="images/imgi_1_cpia_quadrado_(2).png" alt="Oficina Eu, Passarinho">
+    </section>
+
+    <section class="section">
+      <h2>Essa oficina é pra você que:</h2>
+      <ul class="check-list">
+        <li>Ama artesanato, mas anda sem inspiração</li>
+        <li>Sente que vive só para cumprir tarefas</li>
+        <li>Quer um momento só seu</li>
+        <li>Busca um fazer manual com intenção</li>
+        <li>Busca uma atividade terapêutica</li>
+        <li>Quer tempo de qualidade com a família</li>
+        <li>Quer aplicar em salas de aula ou grupos</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>O que você vai aprender</h2>
+      <div class="split">
+        <div>
+          <p>Você vai confeccionar <strong>6 modelos diferentes de passarinhos</strong>, feitos totalmente à mão:</p>
+          <ul class="bullet-list">
+            <li><strong>Passarinho Mensageiro</strong> (tecido)</li>
+            <li><strong>Passarinho Aconchego</strong> (lã)</li>
+            <li><strong>Patinho Primavera</strong> (lã)</li>
+            <li><strong>Móbile de Tsurus</strong> (papel)</li>
+            <li><strong>Passarinho Poesia</strong> (papel)</li>
+            <li><strong>Passarinho Correio</strong> (feltro)</li>
+          </ul>
+        </div>
+        <img src="images/imgi_2_cpia_quadrado_(2).png" alt="Modelos de passarinhos">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Histórias narradas</h2>
+      <p>Além das aulas, você poderá ouvir histórias que falam sobre liberdade, sensibilidade, coragem e recomeços:</p>
+      <ul class="bullet-list">
+        <li><strong>Canto de liberdade</strong></li>
+        <li><strong>Coração de passarinho</strong></li>
+        <li><strong>A menina e o pássaro encantado</strong></li>
+        <li><strong>O passarinho engaiolado</strong></li>
+        <li><strong>A volta do pássaro encantado</strong></li>
+      </ul>
+      <div class="final-cta">
+        <a class="cta" href="https://pay.hotmart.com/G89532997I?checkoutMode=10&hotfeature=51">QUERO VIVER ESSA EXPERIÊNCIA</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Como funciona a oficina?</h2>
+      <p><strong>São 14 aulas gravadas</strong>, organizadas em um passo a passo. Você pode assistir no seu tempo, sem pressa. Eu mostro cada material utilizado, sempre priorizando itens simples e acessíveis. Você não precisa de máquina nem de experiência, a proposta é justamente a delicadeza do fazer manual.</p>
+    </section>
+
+    <section class="section">
+      <h2>Apostila de apoio em PDF</h2>
+      <ul class="check-list">
+        <li>Lista completa de materiais</li>
+        <li>Orientações organizadas</li>
+        <li>O significado de cada passarinho</li>
+        <li>Uma reflexão para cada modelo</li>
+        <li>Uma pergunta direcionada para aprofundar a vivência daquele passarinho</li>
+        <li>A mensagem de cada uma das histórias</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Certificado</h2>
+      <p>Ao concluir a oficina, você recebe um lindo certificado de participação. Ele pode ser usado para comprovar seu aprendizado e até valorizar seu trabalho artesanal. ♡</p>
+      <img src="images/imgi_8_cream_and_orange_bold_modern_professional_entrepreneurship_information_tips_instagram_carousel_post.png" alt="Visual da oficina Eu, Passarinho" style="margin-top: 12px;">
+    </section>
+
+    <section class="section quote">
+      <p>Viu só? <strong>Não é só artesanato...</strong></p>
+      <p>Enquanto confecciona seu passarinho…</p>
+      <p><strong>Você se cuida, se acolhe, se reencontra. ♡</strong></p>
+    </section>
+
+    <div class="final-cta">
+      <a class="cta" href="https://pay.hotmart.com/G89532997I?checkoutMode=10&hotfeature=51">QUERO PARTICIPAR DA OFICINA EU, PASSARINHO</a>
+    </div>
+  </main>
+</body>
+</html>
