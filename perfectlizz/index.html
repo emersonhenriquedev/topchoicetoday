@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Perfect Lizz — Conquiste o Liso Perfeito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue: #152a7a;
+            --accent: #ffb300;
+            --muted: #666;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Montserrat, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            color: #222;
+            background-color: #f9f9f9;
+        }
+
+        .promo {
+            background: var(--blue);
+            color: #fff;
+            text-align: center;
+            padding: .6rem 1rem;
+            font-weight: 700;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .title {
+            font-size: 36px;
+            color: var(--blue);
+            font-weight: 800;
+            margin: 0 0 12px;
+        }
+
+        .title .accent {
+            color: var(--accent);
+        }
+
+        .lead {
+            color: var(--muted);
+            line-height: 1.4;
+            font-size: 18px;
+        }
+
+        .center {
+            flex: 0 0 420px;
+            text-align: center;
+        }
+
+        .product {
+            max-width: 320px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform .18s;
+        }
+
+        .product:hover {
+            transform: translateY(-6px);
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+        }
+
+        .features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            color: #222;
+        }
+
+        .check {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+            flex: 0 0 18px;
+        }
+
+        .cta {
+            display: block;
+            margin-top: 18px;
+            background: var(--accent);
+            color: #111;
+            padding: 14px 20px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: opacity 0.2s;
+        }
+
+        .cta:hover {
+            opacity: 0.9;
+        }
+
+        /* Cookie Bar LGPD Neutro */
+        #cookieBar {
+            position: fixed;
+            left: 16px;
+            right: 16px;
+            bottom: 16px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px 20px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .16);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            z-index: 1200;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media(max-width:880px) {
+            .hero {
+                flex-direction: column;
+                padding: 36px 18px;
+            }
+
+            .center {
+                order: 0;
+                width: 100%;
+                flex: auto;
+            }
+
+            .col {
+                width: 100%;
+                margin-right: 0 !important;
+            }
+
+            .title {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            #cookieBar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="promo">ÚLTIMAS HORAS! ATÉ 60% OFF DE DESCONTO + BRINDES</div>
+
+    <main class="hero" role="main">
+        <div class="col" style="max-width:680px;margin-right:40px">
+            <h1 class="title">CONQUISTE O <span class="accent">LISO PERFEITO</span></h1>
+            <p class="lead">Não perca mais tempo e dinheiro no salão. Com Perfect Lizz você tem resultado de salão em
+                casa, prático e rápido.</p>
+
+            <ul class="features">
+                <li><span class="check"></span>
+                    <div><strong>POSSUI 0% FORMOL</strong></div>
+                </li>
+                <li><span class="check"></span>
+                    <div>SERVE PARA TODOS OS TIPOS DE CABELO</div>
+                </li>
+                <li><span class="check"></span>
+                    <div>CABELOS LISOS POR MUITO MAIS TEMPO</div>
+                </li>
+                <li><span class="check"></span>
+                    <div>NÃO DETERIORA OS FIOS</div>
+                </li>
+                <li><span class="check"></span>
+                    <div>PERFEITO NO DIA SEGUINTE</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="center">
+            <div style="background:#fff;padding:24px;border-radius:14px;box-shadow:0 10px 30px rgba(20,40,90,.08)">
+                <a href="https://app.monetizze.com.br/r/ABV25832090">
+                    <img src="media01.png" alt="Perfect Lizz" class="product">
+                </a>
+                <a href="https://app.monetizze.com.br/r/ABV25832090" class="cta">Saiba
+                    Garanta seu desconto</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cookie Bar Neutro para Conformidade LGPD -->
+    <div id="cookieBar">
+        <div style="flex:1">
+            <strong>Aviso de Privacidade e Cookies</strong>
+            <div style="color:#555; font-size:14px; margin-top:4px;">Utilizamos cookies para melhorar a sua experiência
+                no site. Ao continuar navegando, você concorda com o uso de cookies.</div>
+        </div>
+        <div>
+            <button id="acceptCookies"
+                style="background:var(--blue);color:#fff;border:0;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;">Entendi
+                e Aceitar</button>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const cookieBar = document.getElementById('cookieBar');
+            const acceptBtn = document.getElementById('acceptCookies');
+
+            function setConsent(v) {
+                try { localStorage.setItem('pl_cookie_consent', v); } catch (e) { }
+            }
+            function getConsent() {
+                try { return localStorage.getItem('pl_cookie_consent'); } catch (e) { return null; }
+            }
+
+            if (getConsent() === 'accepted') {
+                cookieBar.style.display = 'none';
+            }
+
+            if (acceptBtn) {
+                acceptBtn.addEventListener('click', function () {
+                    setConsent('accepted');
+                    cookieBar.style.display = 'none';
+                });
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
